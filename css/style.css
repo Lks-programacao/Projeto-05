@@ -1,0 +1,591 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+html,body{
+	height: 100%;
+	overflow-x: hidden;
+}
+
+
+
+
+
+
+.container{
+	max-width: 1220px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+.clear{clear: both;}
+
+
+/* HEADER */
+
+section.bg_{
+	background-image: url('../imagens/bg.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	width: 100%;
+	min-height: 700px;
+	position: relative;
+}
+
+
+.overlay{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 1;
+}
+
+.header_{
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	padding: 0 2%;
+	height: 100px;
+	border-bottom: 2px solid white;
+}
+
+.header_ .logo-header{
+	float: left;
+	height: 20px;
+}
+
+.header_ .logo-header img{
+	max-width: 150px;
+	position: relative;
+	top: -27px;
+
+}
+
+.header_ .menu-desktop{
+	float: right;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.menu-desktop ul{
+	list-style-type: none;
+}
+
+.menu-desktop li{
+	display: inline-block;
+	padding: 0 20px;
+
+}
+
+.menu-desktop a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+}
+
+/* MENU MOBILE */
+
+.menu-mobile{
+	position: absolute;
+	left: 0;
+	display: none;
+	top: 100px;
+	width: 100%;
+	z-index: 30;
+}
+
+.menu-mobile h2{
+	position: absolute;
+	color: white;
+	top: -67px;
+	cursor: pointer;
+	right: 30px;
+}
+
+.menu-mobile ul{
+
+	background-color: rgba(33, 33, 33, 1.0);
+	padding: 5px 0;
+	text-align: center;
+	width: 100%;
+	list-style-type: none;
+	display: none;
+	top: 0;
+	position: relative;
+}
+
+.menu-mobile li{
+	padding: 20px 2%;
+}
+
+.menu-mobile a{
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+
+/* FIM MENU */
+
+.social-header{
+	color: white;
+	right: 43px;
+	bottom: -30px;
+	position: absolute;
+	font-size: 20px;
+}
+
+.social-header i{
+	padding: 0 5px;
+	cursor: pointer;
+}
+
+.texto-bg{
+	color: white;
+	max-width: 900px;
+	position: relative;
+	z-index: 1;
+	padding: 150px 20px;
+
+}
+
+.texto-bg h1{
+	font-size: 50px;
+}
+
+.texto-bg p{
+	font-size: 20px;
+}
+
+/* SOBRE NOS */
+
+
+section.sobre{
+	width: 100%;
+	height: 600px;
+	display: flex;
+	flex-wrap: nowrap;
+
+}
+
+section.sobre .sobre-img{
+
+	width: 50%;
+	min-height: 600px;
+	background-image: url('../imagens/sobreimg.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+section.sobre .sobre-texto{
+	width: 50%;
+	text-align: center;
+	padding: 0 3%;
+	max-width: 500px;
+	margin: 0 auto;
+	margin-top: 6%;
+
+}
+
+.sobre-texto h2{
+	border-bottom: 2px solid black;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.sobre-texto p{
+	font-size: 18px;
+}
+
+
+/* PROJETOS */
+
+section.projetos{
+	max-width: 100%;
+	max-height: 700px;
+	background-color: #212121;
+	color: white;
+	text-align: center;
+	padding: 10px 2%;
+	margin-bottom: 10%;
+
+
+}
+
+section.projetos h2{
+	margin-top: 40px;
+	border-bottom: 2px solid white;
+	display: inline-block;
+	margin-bottom: 30px;
+}
+
+.box-projetos{
+	max-width: 90%;
+	margin: 0 auto;
+	max-height: 800px;
+	position: relative;
+
+}
+
+.box-single img{
+	max-width: 100%;
+	max-height: 700px;
+	width: 100%;
+
+}
+
+/****SLICK SLIDER****/
+
+.slick-dotted ul{
+    display: block;
+	list-style-type: none;
+	text-align: center;
+	position: relative;
+	top:-80px;
+	z-index: 1000;
+
+}
+
+.slick-dotted li{
+	display: inline-block;
+	margin: 0 7px;
+}
+
+.slick-dotted button:focus{
+	outline: 0;
+}
+
+.slick-dotted li button{
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	color: #d8d8d8;
+	border-width: 0;
+	background: #d8d8d8;
+	opacity: 1;
+	cursor: pointer;
+}
+
+li.slick-active button{
+	background: #373855;
+	color: #373855;
+}
+
+.slick-slide:focus { outline: none; }
+
+
+.slick-arrow{
+	position: relative;
+	z-index: 999;
+	height: 50px;
+	width: 50px;
+	background-color: black;
+	border-radius: 50%;
+	border: none;
+	color: transparent;
+	cursor: pointer;
+
+}
+
+.slick-prev{
+	position: absolute;
+	top: 50%;
+	left: -25px;
+	transform: translateY(-50%);
+	display: block;
+
+}
+
+.slick-prev:before{
+	content: '⮜';
+	font-size: 40px;
+	position: relative;
+	left: 12%;
+	bottom: 3px;
+	color: white;
+}
+
+
+.slick-next{
+	position: absolute;
+	top: 50%;
+	right: -25px;
+	transform: translateY(-50%);
+	display: block;
+}
+
+.slick-next:before{
+	content: '⮞';
+	font-size: 40px;
+	position: relative;
+	left: 20%;
+	bottom: 3px;
+	color: white;
+}
+
+.slick-list{
+	position: relative;
+	z-index: 998;
+}
+
+/* ABA CONTATO */
+
+section.contato{
+	width: 100%;
+	padding: 20px 2%;
+	min-height: 400px;
+
+}
+
+section.contato > .container{
+
+	max-width: 1290px;
+	display: flex;
+}
+
+section.contato .contato-form{
+	width: 100%;
+	height: 400px;
+	text-align: center;
+}
+
+section.contato .contato-form h2{
+	
+	margin-bottom: 30px;
+	display: inline-block;
+	border-bottom: 2px solid black;
+
+}
+
+section.contato .contato-form form{
+
+	width: 100%;
+	padding: 10px 0;
+}
+
+.contato-form input[type=text],
+.contato-form input[type=email]{
+
+	height: 40px;
+	border: 2px solid black;
+	margin-bottom: 5px;
+	padding: 0 10px;
+	position: relative;
+	outline: none;
+}
+
+.contato-form textarea{
+	height: 100px;
+	border: 2px solid black;
+	margin-bottom: 10px;
+	resize: none;
+	padding: 10px;
+	outline: none;
+}
+
+.contato-form-icon{
+	margin-top: 15px;
+	display: inline-block;
+	width: calc(80% / 2);
+}
+
+.contato-form-icon img{
+	max-width: 40px;
+}
+
+.contato-form input[type=button]{
+	border: 2px solid black;
+	font-weight: bold;
+	padding: 10px 50px;
+	cursor: pointer;
+	outline: none;
+	background-color: white;
+}
+
+.w100{width: 100%}
+.w50{width: 49.7%; display: inline-block;}
+
+
+
+section.contato .contato-mapa{
+	width: 100%;
+	height: 400px;
+	position: relative;
+}
+
+section.contato .contato-mapa .mapa h2{
+	display: inline-block;
+	border-bottom: 2px solid black;
+	margin-bottom: 40px;
+	position: absolute;
+	top: -70px;
+	left: 0;
+}
+
+.contato-mapa .mapa{
+
+	width: 70%;
+	height: 313px;
+	position: absolute;
+	right: 0;
+	top: 70px;
+	background-color: black;
+
+}
+
+.mapa-wraper{
+	position: absolute;
+	overflow: hidden;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background-color: black;
+	height: 100%;
+}
+
+
+/* FOOTER */
+
+footer{
+	width: 100%;
+	margin-top: 80px;
+}
+
+footer .footer-top{
+	width: 100%;
+	height: 150px;
+	color: white;
+	background-color: #212121;
+	padding: 20px 2%;
+}
+
+footer > .footer-top > .container{
+	max-width: 1000px;
+}
+
+.numeros-top{
+	float: left;
+}
+
+.endereco-top{
+	float: right;
+}
+
+.numeros-top h2{
+	margin-bottom: 10px;
+}
+
+.numeros-top p{
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+.endereco-top h2{
+	margin-bottom: 10px;
+}
+
+.endereco-top p{
+	font-size: 20px;
+}
+
+.endereco-top i{
+	cursor: pointer;
+}
+
+footer .footer-bottom{
+	width: 100%;
+	text-align: center;
+	padding: 10px 0;
+	color: white;
+	background-color: #424242;
+}
+
+/* RESPONSIVO */
+
+@media screen and (max-width: 800px){
+
+	section.contato > .container{
+
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	section.contato .contato-mapa {
+		height: 410px;
+	}
+
+	section.contato .contato-mapa .mapa h2{
+
+		width: 200px;
+		margin-top: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.contato-mapa .mapa{
+
+		width: 430px;
+		max-width: 100%;
+		top: 110px;
+		position: relative;	
+		margin: 0 auto;
+	}
+
+}
+
+@media screen and (max-width: 768px){
+
+/* RESPONSIVIDADE MENU */
+
+.menu-desktop{display: none;}
+.menu-mobile{display: block;}
+
+
+/* RESPONSIVO ABA SOBRE */
+
+	section.sobre{
+		flex-wrap: wrap;
+		position: relative;
+
+	}
+
+	section.sobre h2{
+		border-bottom: 2px solid white;
+	}
+
+	section.sobre .sobre-texto{
+		width: 100%;
+		padding: 50px 4%;
+		position: absolute;
+		top: 0;
+		left:50%;
+		transform: translateX(-50%);
+		color: white;
+	}
+
+	section.sobre .sobre-img{
+		width: 100%;
+		filter: brightness(0.3);
+	}
+
+/* RESPONSIVO ABA PROJETOS */
+
+
+.slick-dotted ul{
+
+	top:-50px;
+
+}
+
+
+
+}
+
